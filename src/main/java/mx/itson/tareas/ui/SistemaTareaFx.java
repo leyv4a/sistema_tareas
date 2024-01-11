@@ -22,6 +22,7 @@ public class SistemaTareaFx extends Application {
     public void init(){
         this.applicationContext =  new SpringApplicationBuilder(TareasApplication.class).run();
     }
+
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(TareasApplication.class.getResource("/templates/index.fxml"));
@@ -35,5 +36,6 @@ public class SistemaTareaFx extends Application {
         applicationContext.close();
         Platform.exit();
     }
+
 }
 
